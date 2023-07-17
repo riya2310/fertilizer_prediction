@@ -1,0 +1,46 @@
+<html>
+    <body bgcolor= grey>
+
+        <center>
+
+        <h1> Fertilizer Prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> TEMPERATURE :  <input type="number", name='a', min="25",max="38"> <br><br>
+            HUMIDITY :  <input type="number", name='b', min="50",max="72"> <br><br>
+            MOISTURE :  <input type="number", name='c', min="25",max="65"> <br><br>
+         SOIL TYPE : <select name="d" id="SOIL TYPE">
+                <option value="Loamy">Loamy</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Clayey">clayey</option>
+            </select>
+             <br><br>
+        CROP TYPE :<select name="e" id="CROP TYPE">
+                <option value="Sugarcane">Sugarcane</option>
+                <option value="Cotton">Cotton</option>
+                <option value="Maize">Maize</option>
+                <option value="Tobacco">Tobacco</option>
+                <option value="Paddy">Paddy</option>
+                <option value="Barley">Barley</option>s
+                <option value="Wheat">Wheat</option>
+                <option value="Millets">Millets</option>
+                <option value="Oil seeds">Oil seeds</option>
+                <option value="Pulses">Pulses</option>
+                <option value="Ground Nuts">Ground Nuts</option>
+            </select>
+            NITROGEN :  <input type="number", name='f', min="4",max="42"> <br><br>
+            POTASSIUM :  <input type="number", name='g', min="0",max="19"> <br><br>
+            PHOSPHORUS :  <input type="number", name='h', min="0",max="42"> <br><br>
+
+            <br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='../static/second.jpg' alt="fertilizer">
+        
+    </center>
+
+    </body>
+</html>
